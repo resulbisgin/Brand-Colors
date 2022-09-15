@@ -15,7 +15,7 @@ function Content() {
             </header>
             <section className='brands'>
                 {brands.map(brand=>(
-                    <LazyLoad once={true} key={brand.slug} overflow={true} placeholder="Yükleniyor...">
+                    <LazyLoad once={true} key={brand.slug} overflow={true} placeholder="Loading...">
                     <Brand brand={brand}/>
                     </LazyLoad>
                 ))}
